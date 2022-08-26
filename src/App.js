@@ -25,7 +25,7 @@ function App() {
       <ambientLight intensity={0.5}/>
         <Physics>
         {/* <CuteGirl  position={[6, 12, -48]} /> */}
-        <Girl position={[6, 12, -48]} ></Girl>
+        <Girl position={[6, 7, -48]} ></Girl>
         {/* <Leonard></Leonard> */}
         {/* <Environment path='/env/scene.gltf'  scale={new Array(3).fill(0.004)}/> */}
         <Environment path="/env/Bhk.glb" scale={new Array(3).fill(5.00)}/>
