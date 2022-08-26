@@ -17,7 +17,7 @@ import Orbit from './components/Orbit';
 function App() {
   return (
       <div style={{height:'100vh', width:'100vw'}}>
-      <Canvas style={{background:"black"}} camera={{position:[3,7,3]}}>
+      <Canvas style={{background:"black"}} camera={{position:[5,96,5]}}>
       <pointLight castShadow 
       shadow-mapSize-height={2**10}
       shadow-mapSize-width={2**10}

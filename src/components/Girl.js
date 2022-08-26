@@ -17,12 +17,12 @@ export default function Model({ ...props }) {
   const { camera } = useThree();
   const previousAction = usePrevious(action);
   useFrame(() => {
-    // if(action !== "standAlone"){
+    if(action !== "standAlone"){
 
-    //   camera.position.x = group.current.position.x + 3;
-    //   camera.position.z = group.current.position.z + 3;
-    //   camera.position.y = 3;
-    // }
+      camera.position.x = group.current.position.x + 64;
+      camera.position.z = group.current.position.z + 64;
+      camera.position.y = 64;
+    }
     camera.lookAt(group.current.position);
     if (action === "walk") group.current.translateZ(1);
     if (action === "running") group.current.translateZ(5);
